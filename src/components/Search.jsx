@@ -1,10 +1,14 @@
 import React from 'react'
+import arrow from '../assets/arrow.png'
 
 function Search() {
   return (
-    <div>
-      
-    </div>
+    <label className='search'>
+      <input></input>
+      <button>
+        <img src={arrow} alt='search' />
+      </button>
+    </label>
   )
 }
 

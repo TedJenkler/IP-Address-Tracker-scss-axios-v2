@@ -2,9 +2,9 @@ import React from 'react'
 
 function DisplayData() {
   return (
-    <div>
+    <section className='data'>
       
-    </div>
+    </section>
   )
 }
 

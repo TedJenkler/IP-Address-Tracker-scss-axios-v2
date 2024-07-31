@@ -1,5 +1,6 @@
 import Search from "./components/Search";
 import Map from "./components/Map";
+import DisplayData from "./components/DisplayData";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
       <div>
         <h1>IP Address Tracker</h1>
         <Search />
+        <DisplayData />
       </div>
       <Map />
     </div>
