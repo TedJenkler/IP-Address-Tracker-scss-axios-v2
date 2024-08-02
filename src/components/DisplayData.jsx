@@ -1,6 +1,7 @@
 import React from 'react'
 
-function DisplayData() {
+function DisplayData({ data }) {
+  console.log(data)
   return (
     <section className='data'>
       
