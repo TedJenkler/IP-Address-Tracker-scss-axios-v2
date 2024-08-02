@@ -2,6 +2,7 @@ import useLocation from "./hooks/useLocation";
 import Search from "./components/Search";
 import Map from "./components/Map";
 import DisplayData from "./components/DisplayData";
+import data from "../data.json"
 
 function App() {
   const { ipData, error, loading } = useLocation();
@@ -11,15 +12,9 @@ function App() {
       <div>
         <h1>IP Address Tracker</h1>
         <Search />
-        {loading ? (
-          <p>Loading...</p>
-        ) : error ? (
-          <p>Error: {error}</p>
-        ) : (
-          <DisplayData data={ipData} />
-        )}
+        <DisplayData data={data} />
       </div>
-      <Map data={ipData} />
+      <Map data={data} />
     </div>
   );
 }
