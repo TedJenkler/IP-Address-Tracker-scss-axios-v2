@@ -56,6 +56,10 @@
         max-width: 25rem;
         border-right: 1px solid $black0;
   
+        &:first-child {
+          min-width: 17.5rem;
+        }
+
         &:last-child {
           border-right: 0;
         }
