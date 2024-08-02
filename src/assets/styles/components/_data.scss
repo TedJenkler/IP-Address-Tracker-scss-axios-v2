@@ -11,16 +11,19 @@
     padding: 1.625rem 1.5rem 1.5rem 1.5rem;
     width: 20.4375rem;
     height: 18.375rem;
-
-    label {
+  
+    div {
+      max-width: 100%;
+  
+      label {
         font-size: 0.625rem;
         color: $grey;
         font-weight: 700;
         word-spacing: 0.09125rem;
         margin-bottom: 0.4375rem;
-    }
-
-    p {
+      }
+  
+      p {
         font-size: 1.25rem;
         color: $black;
         word-spacing: -0.01125rem;
@@ -31,5 +34,43 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         max-width: 100%;
+      }
     }
-}
+  }
+  
+  @include respond-to(xl) {
+    .data {
+      width: 69.375rem;
+      height: 10.063rem;
+      bottom: -25%;
+      flex-direction: row;
+      padding: 0;
+  
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        gap: 0.8125rem;
+        height: 4.6875rem;
+        min-width: 13.3125rem;
+        max-width: 25rem;
+        border-right: 1px solid $black0;
+  
+        &:last-child {
+          border-right: 0;
+        }
+  
+        label {
+          font-size: 0.75rem;
+          word-spacing: 0.109375rem;
+          margin: 0;
+        }
+  
+        p {
+          font-size: 1.625rem;
+          word-spacing: -0.014375rem;
+          margin: 0;
+        }
+      }
+    }
+  }

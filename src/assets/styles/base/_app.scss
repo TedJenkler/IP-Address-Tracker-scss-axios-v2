@@ -1,32 +1,49 @@
 .app {
     height: 100vh;
     width: 100vw;
-
+  
     h1 {
-        color: white;
-        font-size: 1.625rem;
-        line-height: 1.875rem;
-        word-spacing: -0.014375rem;
-        margin-bottom: 1.313rem;
+      color: white;
+      font-size: 1.625rem;
+      line-height: 1.875rem;
+      word-spacing: -0.014375rem;
+      margin-bottom: 1.313rem;
     }
-
+  
     .info {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        padding: 1.625rem 1.5rem 9.8125rem 1.5rem;
-        height: 36.2%;
-        width: 100%;
-        background-image: url('../../assets/bg.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.625rem 1.5rem 9.8125rem 1.5rem;
+      height: 36.2%;
+      width: 100%;
+      background-image: url('../../assets/bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-
+  
     main {
-        position: relative;
-        height: 63.8%;
-        width: 100vw;
+      position: relative;
+      height: 63.8%;
+      width: 100vw;
     }
-}
+  }
+  
+  @include respond-to(xl) {
+    .app {
+      .info {
+        height: 35%;
+        background-image: url('../../assets/bgdesktop.png');
+  
+        h1 {
+          margin-bottom: 1.938rem;
+        }
+      }
+    }
+  
+    main {
+      height: 65%;
+    }
+  }

@@ -6,14 +6,22 @@ function DisplayData({ data }) {
 
   return (
     <section className='data'>
-      <label>IP Address</label>
-      <p>{ip}</p>
-      <label>Location</label>
-      <p>{city}, {country} {postalCode}</p>
-      <label>Timezone</label>
-      <p>{timezone}</p>
-      <label>ISP</label>
-      <p>{isp}</p>
+      <div>
+        <label>IP Address</label>
+        <p>{ip}</p>
+      </div>
+      <div>
+        <label>Location</label>
+        <p>{city}, {country} {postalCode}</p>
+      </div>
+      <div>
+        <label>Timezone</label>
+        <p>{timezone}</p>
+      </div>
+      <div>
+        <label>ISP</label>
+        <p>{isp}</p>
+      </div>
     </section>
   );
 }
