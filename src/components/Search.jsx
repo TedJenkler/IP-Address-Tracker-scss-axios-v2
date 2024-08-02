@@ -1,15 +1,29 @@
-import React from 'react'
-import arrow from '../assets/arrow.png'
+import React, { useState } from 'react';
+import arrow from '../assets/arrow.png';
 
-function Search() {
+function Search({ onSearch }) {
+  const [ip, setIp] = useState('');
+
+  const handleSearch = () => {
+    if (ip.trim()) {
+      onSearch(ip.trim());
+    } else {
+    }
+  };
+
   return (
-    <label className='search'>
-      <input></input>
-      <button>
+    <div className='search'>
+      <input
+        type="text"
+        onChange={(e) => setIp(e.target.value)}
+        value={ip}
+        placeholder="Enter IP address"
+      />
+      <button onClick={handleSearch}>
         <img src={arrow} alt='search' />
       </button>
-    </label>
-  )
+    </div>
+  );
 }
 
-export default Search
+export default Search;

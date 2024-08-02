@@ -10,7 +10,7 @@
         margin-bottom: 1.313rem;
     }
 
-    div {
+    .info {
         display: flex;
         position: relative;
         flex-direction: column;
@@ -25,7 +25,8 @@
     }
 
     main {
+        position: relative;
         height: 63.8%;
-        width: 100%;
+        width: 100vw;
     }
 }

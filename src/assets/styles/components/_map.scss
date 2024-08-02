@@ -1,0 +1,10 @@
+.map {
+    position: relative;
+    z-index: 40;
+    height: 100%;
+    width: 100%;
+}
+
+.leaflet-control-zoom {
+    display: none;
+  }
